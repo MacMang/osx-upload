@@ -1,11 +1,22 @@
 {
   "name": "osx-upload",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "osx-upload vue上传组件",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "朱蒙托",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MacMang/osx-upload.git"
+  },
+  "keywords": [
+    "vue上传组件"
+  ],
+  "bugs": {
+    "url": "https://github.com/MacMang/osx-upload/issues"
+  },
+  "homepage": "https://github.com/MacMang/osx-upload#readme"
 }

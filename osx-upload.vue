@@ -13,7 +13,7 @@
           <slot></slot>
       </div>
     </div>
-    <ul class="mt-upload-preview-list">
+    <ul class="mt-upload-preview-list" v-if="showPreviewList">
       <transition-group name="list" tag="div">
         <li
           v-for="(item,index) in fileList"
@@ -51,9 +51,9 @@
         </li>
       </transition-group>
     </ul>
-    <div class="mt-upload-slot">
+    <!-- <div class="mt-upload-slot">
       <slot></slot>
-    </div>
+    </div> -->
   </div>
 </template>
 <script>
@@ -126,6 +126,10 @@ export default {
     buttonType: {
       type: String,
       default: 'default'
+    },
+    showPreviewList: {
+      type: Boolean,
+      default: true
     }
   },
   data () {
